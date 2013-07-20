@@ -9,5 +9,4 @@ do
   sed -i s/1089/$i/g background"_"$i.DAT
   sed -i s/zeeg/$i/g background"_"$i.DAT
   ./mcfm background"_"$i.DAT
-  
 done
