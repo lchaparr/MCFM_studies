@@ -86,10 +86,10 @@ Textfile::Textfile(TTree *tree) : fChain(0)
   // if parameter tree is not specified (or zero), connect the file
   // used to generate this class and read the Tree.
   if (tree == 0) {
-    TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("zgamma_background.root");
+    TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("signal.root");
     if (!f || !f->IsOpen())
       {
-	f = new TFile("zgamma_background.root");
+	f = new TFile("signal.root");
       }
     f->GetObject("h300",tree);
 
